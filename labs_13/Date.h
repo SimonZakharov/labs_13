@@ -1,5 +1,7 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 #include <istream>
+#include <cstdio>
 class Date
 {
 public:

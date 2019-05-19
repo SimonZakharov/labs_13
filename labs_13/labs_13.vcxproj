@@ -25,6 +25,7 @@
     <None Include="output.bin" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="crypt_algs.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="DateDMY.cpp" />
     <ClCompile Include="oop1.cpp" />

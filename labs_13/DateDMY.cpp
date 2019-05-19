@@ -27,6 +27,7 @@ int DateDMY::getYear()
 
 int DateDMY::fromYearBegin()
 {
+	printf("\nfunction from DMY class\n");
 	int res = 0;
 	for (int i = 1; i < month; ++i)
 	{
@@ -58,6 +59,14 @@ int DateDMY::fromYearBegin()
 	return res;
 }
 
+//	функция, которая вызывает виртуальную
+int DateDMY::holidaysPast()
+{
+	int res = 0;
+	res = fromYearBegin() / 7 + 1;
+	return res * 2;
+}
+
 void DateDMY::read(std::istream & is)
 {
 	if (is)
@@ -78,6 +87,12 @@ std::ostream & operator<<(std::ostream & out, DateDMY & dmy)
 {
 	out << dmy.getDay() << "." << dmy.getMonth() << "." << dmy.getYear() << std::endl;
 	return out;
+}
+
+std::istream &operator>>(std::istream &ios, DateDMY &dmy)
+{
+	ios >> dmy.day >> dmy.month >> dmy.year;
+	return ios;
 }
 
 DateDMY operator+(DateDMY &date, const int &d)

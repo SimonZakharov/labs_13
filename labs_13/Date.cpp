@@ -74,6 +74,7 @@ void Date::display(std::ostream &os)
 
 int Date::fromYearBegin()
 {
+	printf("\nfunction from Date class\n");
 	int res = 0;
 	for (int i = 1; i < month; ++i)
 	{
