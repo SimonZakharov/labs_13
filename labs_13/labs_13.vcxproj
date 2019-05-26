@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="input.dat" />
   </ItemGroup>
   <ItemGroup>
     <None Include="output.bin" />
